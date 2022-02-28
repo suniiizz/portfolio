@@ -159,6 +159,14 @@ p {
     position: relative;
     margin: -16px auto 0px;
     padding-bottom: 80px;
+    position: relative;
+}
+
+/* layout */
+#layout {
+    height: 1200px;
+    position: relative;
+    transition: height .2s ease;
 }
 
 /* Home */
@@ -203,11 +211,7 @@ p {
 }
 
 /* About */
-#about { 
-    position: relative;
-}
-
-.section {
+.about {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -223,20 +227,17 @@ p {
     box-shadow: transparent 0px 0px 0px 2px inset;
 }
 
-.section img {
+.about img {
     height: 100px;
 }
 
-.section p {
+.about p {
     line-height: 30px;
     font-size: var(--font-small);
     letter-spacing: 0.5px;
 }
 
 /* Skill */
-#skill_grid {
-    position: relative;
-}
 
 .skill {
     display: flex;
@@ -280,3 +281,72 @@ p {
     width: 100%;
     padding: 5px;
 }
+
+/* Work */
+.work {
+    position: absolute;
+    top: 16px;
+    left: 904px;
+    width: 280px;
+    height: 576px;
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.work_project {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.work_tit {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.work_tit h3 {
+    margin: 0;
+    font-size: var(--font-medium);
+    color: var(--color-white);
+    font-family: 'Moranga Bold', sans-serif;
+}
+
+.project_bg {
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+}
+
+.project_img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.work_btn {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    color: var(--color-black);
+    font-size: var(--font-micro);
+    font-weight: var(--weight-bold);
+    background-color: var(--color-white);
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-family: 'Silka Regular', sans-serif;
+}
+
+.work_btn span {
+    margin-left: 5px;
+}
+
+.work_btn i {
+    transform: rotate(-45deg);
+}
+
+
