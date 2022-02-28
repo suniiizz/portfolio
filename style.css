@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Silka Regular';
+    src:url('./font/Silka-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Silka Medium';
+    src:url('./font/Silka-Medium.woff') format('woff2');
+}
+
 /* Global */
 :root {
     /* Color */
@@ -6,7 +15,7 @@
     --color-dark-white: #bdbdbd;
     --color-pink: #FEC5D7;
     --color-light-pink: #F7F2F2;
-    --color-dark-pink: #ECE9E96;
+    --color-dark-pink: #ECE9E9;
     --color-dark-grey: #8F8F8F;
     --color-grey: #f0f0f0;
     --color-light-grey: #F5f5f5;
@@ -35,12 +44,30 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; */
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 /* Typo */
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--color-black);
     margin: 16px 0;
+    font-family: 'Silka Medium', sans-serif;
+
 }
 
 h2 {
@@ -48,6 +75,7 @@ h2 {
     font-weight: var(--weght-semi-bold);
     color: var(--color-black);
     margin: 8px 0;
+    font-family: 'Silka Medium', sans-serif;
 }
 
 h3 {
@@ -55,6 +83,7 @@ h3 {
     font-weight: var(--weght-regular);
     color: var(--color-black);
     margin: 8px 0;
+    font-family: 'Silka Medium', sans-serif;
 }
 
 p {
@@ -62,6 +91,44 @@ p {
     font-weight: var(--weght-regular);
     color: var(--color-black);
     margin: 4px 0;
+    font-family: 'Silka Regular', sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-light-pink);
+    align-items: center;
+    font-family: 'Silka Medium', sans-serif;
+    padding: 16px;
+}
+
+.navbar_menu {
+    display: flex;
+    background-color: var(--color-dark-pink);
+    border-radius: 23px;
+    padding: 5px;
+}
+
+.navbar_logo {
+    font-size: var(--font-medium);
+}
+
+.navbar_menu_item {
+    padding: 8px 16px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.navbar_menu_item.active {
+    border-radius: 50px;
+    background-color: var(--color-white);
+}
+
+.navbar_menu_item:hover {
+    color: var(--color-dark-grey);
+    transition: all 0.2s ease 0s;
 }
 
 .logo {
