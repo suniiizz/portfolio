@@ -15,7 +15,7 @@
     --color-green: #6CCFB3;
     --color-black: #000000;
 
-    /* Font size */
+    /* Font size */ 
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
@@ -33,6 +33,35 @@
 /* Universal tags */
 * {
     box-sizing: border-box;
+}
+
+/* Typo */
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0;
+}
+
+h2 {
+    font-size: var(--font-regular);
+    font-weight: var(--weght-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weght-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--weght-regular);
+    color: var(--color-black);
+    margin: 4px 0;
 }
 
 .logo {
