@@ -1,3 +1,40 @@
+/* Global */
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #FEC5D7;
+    --color-light-pink: #F7F2F2;
+    --color-dark-pink: #ECE9E96;
+    --color-dark-grey: #8F8F8F;
+    --color-grey: #f0f0f0;
+    --color-light-grey: #F5f5f5;
+    --color-blue: #98CFFF;
+    --color-yellow: #FEE2A3;
+    --color-green: #6CCFB3;
+    --color-black: #000000;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weght-semi-bold: 600;
+    --weght-regular: 400;
+
+    /* Size */
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
 .logo {
     width: 16px;
     height: 16px;
