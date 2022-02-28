@@ -56,8 +56,18 @@ a {
 }
 
 ul {
-    list-style: none;
     padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 /* Typo */
@@ -65,7 +75,7 @@ h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
     color: var(--color-black);
-    margin: 16px 0;
+    margin: 20px 0;
     font-family: 'Silka Medium', sans-serif;
 
 }
@@ -74,7 +84,7 @@ h2 {
     font-size: var(--font-regular);
     font-weight: var(--weght-semi-bold);
     color: var(--color-black);
-    margin: 8px 0;
+    margin: 12px 0;
     font-family: 'Silka Medium', sans-serif;
 }
 
@@ -82,7 +92,7 @@ h3 {
     font-size: var(--font-regular);
     font-weight: var(--weght-regular);
     color: var(--color-black);
-    margin: 8px 0;
+    margin: 12px 0;
     font-family: 'Silka Medium', sans-serif;
 }
 
@@ -90,7 +100,7 @@ p {
     font-size: var(--font-regular);
     font-weight: var(--weght-regular);
     color: var(--color-black);
-    margin: 4px 0;
+    margin: 8px 0;
     font-family: 'Silka Regular', sans-serif;
 }
 
@@ -101,7 +111,9 @@ p {
     background-color: var(--color-light-pink);
     align-items: center;
     font-family: 'Silka Medium', sans-serif;
-    padding: 16px;
+    padding: 0 60px;
+    height: 150px;
+    font-size: var(--font-micro);
 }
 
 .navbar_menu {
@@ -111,8 +123,9 @@ p {
     padding: 5px;
 }
 
-.navbar_logo {
-    font-size: var(--font-medium);
+.navbar_logo .logo {
+    width: 50px;
+    height: 50px;
 }
 
 .navbar_menu_item {
@@ -131,7 +144,38 @@ p {
     transition: all 0.2s ease 0s;
 }
 
-.logo {
-    width: 16px;
-    height: 16px;
+#navbar a span:hover {
+    color: var(--color-dark-grey);
+    transition: all 0.2s ease 0s;
 }
+
+/* Home */
+#home {
+    padding: 100px 40px;
+    text-align: center;
+    background-color: var(--color-light-pink);
+}
+
+.home_avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+}
+
+.home_tit,
+.home_desc {
+    color: var(--color-black);
+}
+
+.home_contact {
+    color: var(--color-black);
+    font-size: var(--font-micro);
+    font-weight: var(--weight-bold);
+    background-color: var(--color-white);
+    margin: 24px;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-family: 'Silka Regular', sans-serif;
+}
+
