@@ -48,6 +48,7 @@ body {
     margin: 0;
     /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; */
     cursor: default;
+    background: var(--color-light-pink);
 }
 
 a {
@@ -108,11 +109,10 @@ p {
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-light-pink);
     align-items: center;
     font-family: 'Silka Medium', sans-serif;
     padding: 0 60px;
-    height: 150px;
+    height: 140px;
     font-size: var(--font-micro);
 }
 
@@ -149,11 +149,18 @@ p {
     transition: all 0.2s ease 0s;
 }
 
+/* Page */
+#page {
+    width: 1200px;
+    position: relative;
+    margin: -16px auto 0px;
+    padding-bottom: 80px;
+}
+
 /* Home */
 #home {
-    padding: 100px 40px;
+    padding: 50px 40px;
     text-align: center;
-    background-color: var(--color-light-pink);
 }
 
 .home_avatar {
@@ -168,14 +175,53 @@ p {
     color: var(--color-black);
 }
 
-.home_contact {
+.home_btn {
     color: var(--color-black);
     font-size: var(--font-micro);
     font-weight: var(--weight-bold);
     background-color: var(--color-white);
     margin: 24px;
-    padding: 8px 16px;
+    padding: 10px 16px;
     border-radius: 18px;
     font-family: 'Silka Regular', sans-serif;
+}
+
+.home_btn span {
+    margin-left: 5px;
+}
+
+.home_btn i {
+    transform: rotate(-45deg);
+}
+
+/* Section common */
+#about { 
+    position: relative;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 576px;
+    height: 280px;
+    background: var(--color-white);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 36px 42px;
+    border-radius: 32px;
+    box-shadow: transparent 0px 0px 0px 2px inset;
+}
+
+.section img {
+    height: 100px;
+}
+
+.section p {
+    line-height: 30px;
+    font-size: var(--font-small);
+    letter-spacing: 0.5px;
 }
 
