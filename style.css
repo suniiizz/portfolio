@@ -6,6 +6,10 @@
     font-family: 'Silka Medium';
     src:url('./font/Silka-Medium.woff') format('woff2');
 }
+@font-face {
+    font-family: 'Moranga Bold';
+    src:url('./font/Moranga-Bold.woff') format('woff');
+}
 
 /* Global */
 :root {
@@ -17,7 +21,7 @@
     --color-light-pink: #F7F2F2;
     --color-dark-pink: #ECE9E9;
     --color-dark-grey: #8F8F8F;
-    --color-grey: #f0f0f0;
+    --color-grey: #EFF2F7;
     --color-light-grey: #F5f5f5;
     --color-blue: #98CFFF;
     --color-yellow: #FEE2A3;
@@ -151,7 +155,7 @@ p {
 
 /* Page */
 #page {
-    width: 1200px;
+    max-width: 1200px;
     position: relative;
     margin: -16px auto 0px;
     padding-bottom: 80px;
@@ -168,6 +172,10 @@ p {
     height: 250px;
     border-radius: 50%;
     border: 5px solid var(--color-white);
+}
+
+.home_tit {
+    font-family: 'Moranga Bold', sans-serif;
 }
 
 .home_tit,
@@ -194,7 +202,7 @@ p {
     transform: rotate(-45deg);
 }
 
-/* Section common */
+/* About */
 #about { 
     position: relative;
 }
@@ -225,3 +233,50 @@ p {
     letter-spacing: 0.5px;
 }
 
+/* Skill */
+#skill_grid {
+    position: relative;
+}
+
+.skill {
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 608px;
+    left: 16px;
+    width: 576px;
+    height: 280px;
+    background-color: var(--color-white);
+    padding: 36px 42px;
+    border-radius: 32px;
+}
+
+.skill h2 {
+    font-family: 'Moranga Bold', sans-serif;
+    font-size: var(--font-medium);
+    margin: 0;
+}
+
+.skill p {
+    font-size: var(--font-small);
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-grey);
+    width: 100%;
+}
+
+.skillset {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill_desc {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
