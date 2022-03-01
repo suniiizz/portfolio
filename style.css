@@ -153,62 +153,17 @@ p {
     transition: all 0.2s ease 0s;
 }
 
-/* Page */
-#page {
+/* Contents */
+#contents {
     max-width: 1200px;
     position: relative;
     margin: -16px auto 0px;
     padding-bottom: 80px;
-    position: relative;
 }
 
-/* layout */
-#layout {
-    margin-top: 20px;
+#contents_layout {
+    /* margin-top: 20px; */
     height: 1200px;
-    position: relative;
-    transition: height .2s ease;
-}
-
-/* Home */
-#home {
-    padding: 50px 40px;
-    text-align: center;
-}
-
-.home_avatar {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 10px solid var(--color-white);
-}
-
-.home_tit {
-    font-family: 'Moranga Bold', sans-serif;
-}
-
-.home_tit,
-.home_desc {
-    color: var(--color-black);
-}
-
-.home_btn {
-    color: var(--color-black);
-    font-size: var(--font-micro);
-    font-weight: var(--weight-bold);
-    background-color: var(--color-white);
-    margin: 24px;
-    padding: 10px 16px;
-    border-radius: 18px;
-    font-family: 'Silka Regular', sans-serif;
-}
-
-.home_btn span {
-    margin-left: 5px;
-}
-
-.home_btn i {
-    transform: rotate(-45deg);
 }
 
 /* About */
@@ -235,6 +190,7 @@ p {
     line-height: 30px;
     font-size: var(--font-small);
     letter-spacing: 0.5px;
+    text-overflow: ellipsis;
 }
 
 /* Skill */
@@ -355,7 +311,7 @@ p {
 
 .work_btn {
     position: absolute;
-    left: 30px;
+    left: 20px;
     bottom: 20px;
     color: var(--color-black);
     font-size: var(--font-micro);
@@ -411,7 +367,7 @@ p {
 #animation p {
     font-family: 'Moranga Bold', sans-serif;
     font-size: var(--font-medium);
-    padding: 20px 0 0 30px;
+    padding: 24px 0 0 40px;
 }
 
 /* Screen */
@@ -425,14 +381,11 @@ p {
     border-radius: 32px;
 }
 
-#screen p {
+#screen h2 {
     font-family: 'Moranga Bold', sans-serif;
-    font-size: var(--font-medium);
-    padding: 20px 0 0 30px;
+    margin: 0;
+    padding: 24px 0 0 40px;
 }
-
-
-
 
 /* Contact */
 #contact {

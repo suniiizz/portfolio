@@ -12,239 +12,145 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_2.css" />
+    <link rel="stylesheet" href="media.css" />
 </head>
+
 <body>
+<div id="header">
     <!-- Navbar -->
     <nav id="navbar">
-            <div class="navbar_logo">
-                <img src="img/favicon.png" class="logo" alt="로고">
-            </div>
-            <ul class="navbar_menu">
-                <li class="navbar_menu_item active">All</li>
-                <li class="navbar_menu_item">About</li>
-                <li class="navbar_menu_item">Project</li>
-                <li class="navbar_menu_item">Animation</li>
-            </ul>
-            <a href="#"><span>Contact</span></a>
+        <div class="navbar_logo">
+            <img src="img/favicon.png" class="logo" alt="로고">
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_menu_item active">All</li>
+            <li class="navbar_menu_item">About</li>
+            <li class="navbar_menu_item">Project</li>
+            <li class="navbar_menu_item">Animation</li>
+        </ul>
+        <a href="#" class="contact"><span>Contact</span></a>
     </nav>
+</div>
 
-    <!-- Page -->
-    <section id="page">
+<main id="contents">
+    <section id="contents_layout">
+    <section id="about" class="about">
+        <img src="img/favicon.png" alt="이미지">
+        <p>안녕하세요 신입 퍼블리셔 이선희입니다. <br>
+            새로운 분야에 도전하는 만큼 꾸준하게 발전하는 사람이 되겠습니다.</p>
+    </section>
 
-        <!-- Home -->
-        <!-- <section id="home">
-            <img src="img/profile.jpeg" alt="sunny profile photo" class="home_avatar">
-            <h1 class="home_tit">HEllO</h1>
-            <p class="home_desc">안녕하세요 신입 퍼블리셔 이선희입니다.</p>
-            <button class="home_btn">
-                <i class="fa-solid fa-arrow-right-long"></i>
-                <span class="home_btn_text">Read more</span>
-            </button>
-        </section> -->
-
-    <!-- layout -->
-    <section id="layout">
-
-        <!-- About -->
-        <section id="about" class="about">
-            <img src="img/favicon.png" alt="이미지">
-            <p>안녕하세요 신입 퍼블리셔 이선희입니다.<br>
-                새로운 분야에 도전하는 만큼 꾸준하게 발전하는 사람이 되겠습니다.</p>
-            <!-- <div class="about_majors">
-                <div class="major">
-                    <div class="major_icon">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="major_tit">HTML</div>
-                    <div class="major_desc">웹표준, 웹접근성</div>
+    <section id="skill" class="skill">
+        <h2 class="skill_tit">SKILL</h2>
+        <P>배우는데 그치지 않고 배운 것을 활용하도록 노력하겠습니다.</P>
+            <div class="skillset">
+                <div class="skill_desc">
+                    <span>HTML</span>
+                    <span>90%</span>
                 </div>
-                <div class="major">
-                    <div class="major_icon">
-                        <i class="fa-brands fa-css3"></i>
-                    </div>
-                    <div class="major_tit">CSS</div>
-                    <div class="major_desc">미디어 쿼리, 반응형 사이트 제작</div>
+                <div class="skill_desc">
+                    <span>CSS</span>
+                    <span>80%</span>
                 </div>
-                <div class="major">
-                    <div class="major_icon">
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                    <div class="major_tit">JS</div>
-                    <div class="major_desc">제이쿼리 & 라이브러리</div>
+                <div class="skill_desc">
+                    <span>jQuery</span>
+                    <span>70%</span>
                 </div>
-            </div> -->
-        </section>
-
-        <!-- Skill -->
-        <section id="skill" class="skill">
-            <h2 class="skill_tit">SKILL</h2>
-            <P>배우는데 그치지 않고 배운 것을 활용하도록 노력하겠습니다.</P>
-                <div class="skillset">
-                    <div class="skill_desc">
-                        <span>HTML</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill_desc">
-                        <span>CSS</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill_desc">
-                        <span>jQuery</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill_desc">
-                        <span>JavaScript</span>
-                        <span>60%</span>
-                    </div>
-                    <!-- <div class="skill">
-                            <div class="skill_desc">
-                                <span>CSS</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill_bar">
-                                <div class="skill_value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_desc">
-                                <span>jQuery</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="skill_bar">
-                                <div class="skill_value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill_desc">
-                                <span>JavaScript</span>
-                                <span>60%</span>
-                            </div>
-                            <div class="skill_bar">
-                                <div class="skill_value"></div>
-                            </div>
-                        </div> -->
-                </div>
-                <!-- <div class="skillset_right">
-                        <div class="tools">
-                            <h3 class="skillset_tit">Tolls</h3>
-                            <ul class="tools_list">
-                                <li><span>Visual Studio Code</span></li>
-                                <li><span>Photoshop</span></li>
-                                <li><span>illustrator</span></li>
-                                <li><span>Figma</span></li>
-                                <li><span>Github</span></li>
-                            </ul>
-                        </div>
-                    </div> -->
-            </section>  
-        </div>
-
-        <!-- Work -->
-        <section id="work" class="work">
-                <div class="work_grid_1">
-                    <div class="work_project">
-                        <img src="img/bg_1.svg" class="project_bg" alt="bg">
-                        <img src="img/project/Standard.png" class="project_img" alt="standard">
-                        <div class="work_tit">
-                            <h2>Web <br> Standard</h2>
-                        </div>
-                        <button class="work_btn">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            <span class="work_btn_text">View</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="work_grid_2">
-                    <div class="work_project">
-                        <img src="img/bg_2.svg" class="project_bg" alt="bg">
-                        <img src="img/project/Responsive.png" class="project_img" alt="standard">
-                        <div class="work_tit">
-                            <h2>Web <br> Responsive</h2>
-                        </div>
-                        <button class="work_btn">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            <span class="work_btn_text">View</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="work_grid_3">
-                    <div class="work_project">
-                        <img src="img/bg_3.svg" class="project_bg" alt="bg">
-                        <img src="img/project/ffroi.png" class="project_img" alt="standard">
-                        <div class="work_tit">
-                            <h2>ffroi</h2>
-                        </div>
-                        <button class="work_btn">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            <span class="work_btn_text">View</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="work_grid_4">
-                    <div class="work_project">
-                        <img src="img/bg_3.svg" class="project_bg" alt="bg">
-                        <img src="img/project/ffroi.png" class="project_img" alt="standard">
-                        <div class="work_tit">
-                            <h2>ffroi</h2>
-                        </div>
-                        <button class="work_btn">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            <span class="work_btn_text">View</span>
-                        </button>
-                    </div>
-                </div>
-        </section>
-
-        <!-- Animation -->
-        <section id="animation">
-            <div class="animation_grid_1">
-                <div class="animation_work">
-                    <p>Circle</p>
+                <div class="skill_desc">
+                    <span>JavaScript</span>
+                    <span>60%</span>
                 </div>
             </div>
-            <div class="animation_grid_2">
-                <div class="animation_work">
-                    <p>Mouse</p>
-                </div>
-            </div>
-            <div class="animation_grid_3">
-                <div class="animation_work">
-                    <p>Hover</p>
-                </div>
-            </div>
-        </section>
+    </section>
 
-        <!-- Screen -->
-        <div id="screen">
-            <div class="screen_grid">
-                <div class="screen_mode">
-                    <p>
-                        Screen <br>mode
-                    </p>
+    <section id="work" class="work">
+        <div class="work_grid_1">
+            <div class="work_project">
+                <img src="img/bg_1.svg" class="project_bg" alt="bg">
+                <img src="img/project/Standard.png" class="project_img" alt="standard">
+                <div class="work_tit">
+                    <h2>Standard</h2>
                 </div>
+                <button class="work_btn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span class="work_btn_text">View</span>
+                </button>
             </div>
         </div>
-
-        <!-- Contact -->
-        <!-- <section id="contact">
-            <h1 class="contact_tit">Let's talk</h1>
-            <h2 class="contact_email">tptpmm@gamil.com</h2>
-            <div class="contact_link">
-                <a href="https://github.com/suniiizz/portfolio">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="#" target="blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <p class="contact_rights">
-                    2022 sunny - All rights reserved.
-                </p>
+        <div class="work_grid_2">
+            <div class="work_project">
+                <img src="img/bg_2.svg" class="project_bg" alt="bg">
+                <img src="img/project/Responsive.png" class="project_img" alt="standard">
+                <div class="work_tit">
+                    <h2>Web <br> Responsive</h2>
+                </div>
+                <button class="work_btn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span class="work_btn_text">View</span>
+                </button>
             </div>
-        </section> -->
+        </div>
+        <div class="work_grid_3">
+            <div class="work_project">
+                <img src="img/bg_3.svg" class="project_bg" alt="bg">
+                <img src="img/project/ffroi.png" class="project_img" alt="standard">
+                <div class="work_tit">
+                    <h2>ffroi</h2>
+                </div>
+                <button class="work_btn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span class="work_btn_text">View</span>
+                </button>
+            </div>
+        </div>
+        <div class="work_grid_4">
+            <div class="work_project">
+                <img src="img/bg_3.svg" class="project_bg" alt="bg">
+                <img src="img/project/ffroi.png" class="project_img" alt="standard">
+                <div class="work_tit">
+                    <h2>ffroi</h2>
+                </div>
+                <button class="work_btn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <span class="work_btn_text">View</span>
+                </button>
+            </div>
+        </div>
     </section>
+
+
+    <section id="animation">
+        <div class="animation_grid_1">
+            <div class="animation_work">
+                <p>Circle</p>
+            </div>
+        </div>
     </section>
-    
-    
+    <section id="animation">
+        <div class="animation_grid_2">
+            <div class="animation_work">
+                <p>Mouse</p>
+            </div>
+        </div>
+    </section>
+    <section id="animation">
+        <div class="animation_grid_3">
+            <div class="animation_work">
+                <p>Hover</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="screen">
+        <div class="screen_grid">
+            <div class="screen_mode">
+            </div>
+        </div>
+    </section>
+
+</section>
+</main>
+
 </body>
 </html>

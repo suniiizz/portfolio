@@ -1,0 +1,205 @@
+@media screen and (max-width: 1200px) {
+    #contents {
+        max-width: 800px;
+    }
+
+    #contents_layout {
+        height: 995px;
+    }
+
+    h2 {
+        font-size: var(--font-regular);
+    }
+
+    .about {
+        padding: 40px 46px;
+        width: 376px;
+        height: 376px;
+    }
+
+    .work_grid_1 {
+        left: 604px;
+        width: 180px;
+        height: 376px;
+    }
+
+    .work_grid_2 {
+        top: 212px;
+        left: 408px;
+        width: 180px;
+        height: 376px;
+    }
+
+    .work_grid_3 {
+        top: 408px;
+        left: 16px;
+        width: 376px;
+        height: 180px;
+    }
+
+    .work_grid_4 {
+        top: 604px;
+        left: 408px;
+        width: 376px;
+        height: 180px;
+    }
+
+    .work_tit h2{
+        font-size: var(--font-regular);
+    }
+
+    .work_btn {
+        padding: 9px 10px;
+        left: 20px;
+    }
+
+    .work_btn span {
+        display: none;
+    }
+
+    .skill {
+        top: 604px;
+        width: 376px;
+        height: 376px;
+    }
+
+    .animation_grid_1 {
+        left: 408px;
+        width: 180px;
+        height: 180px;
+    }
+        
+    .animation_grid_2 {
+        top: 800px;
+        left: 408px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .animation_grid_3 {
+        top: 800px;
+        left: 604px;
+        width: 180px;
+        height: 180px;
+    }
+
+    #animation p {
+        display: none;
+    }
+
+    #screen {
+        top: 408px;
+        left: 604px;
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    #contents {
+        max-width: 375px;
+    }
+
+    #contents_layout {
+        height: 2180px;
+    }
+
+    .about {
+        top: 16px;
+        left: 16px;
+        width: 343px;
+        height: 344px;
+    }
+
+    .work_grid_1 {
+        top: 556px;
+        left: 196px;
+        width: 164px;
+        height: 344px;
+    }
+
+    .work_grid_2 {
+        top: 736px;
+        left: 16px;
+        width: 164px;
+        height: 344px;
+    }
+
+    .work_grid_3 {
+        top: 1816px;
+        left: 16px;
+        width: 343px;
+        height: 164px;
+    }
+
+    .work_grid_4 {
+        top: 1996px;
+        left: 16px;
+        width: 343px;
+        height: 164px;
+    }
+
+    .work_tit h2{
+        font-size: var(--font-regular);
+    }
+
+    .work_btn {
+        padding: 9px 10px;
+        left: 20px;
+    }
+
+    .work_btn span {
+        display: none;
+    }
+
+    .skill {
+        top: 1456px;
+        left: 16px;
+        width: 343px;
+        height: 344px;
+    }
+
+    .animation_grid_1 {
+        top: 376px;
+        left: 16px;
+        width: 343px;
+        height: 164px;
+    }
+        
+    .animation_grid_2 {
+        top: 556px;
+        left: 16px;
+        width: 164px;
+        height: 164px;
+    }
+
+    .animation_grid_3 {
+        top: 1096px;
+        left: 16px;
+        width: 343px;
+        height: 344px;
+    }
+
+    #animation p {
+        display: none;
+    }
+
+    #screen {
+        top: 916px;
+        left: 196px;
+        width: 164px;
+        height: 164px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+        padding: 0px 3.5vw;
+    }
+    .contact {
+        display: none;
+    }
+}
