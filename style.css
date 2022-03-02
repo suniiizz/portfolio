@@ -31,7 +31,7 @@
     /* Font size */ 
     --font-large: 48px;
     --font-medium: 28px;
-    --font-regular: 18px;
+    --font-regular: 20px;
     --font-small: 16px;
     --font-micro: 14px;
 
@@ -136,21 +136,22 @@ p {
     padding: 8px 16px;
     cursor: pointer;
     align-items: center;
+    border-radius: 50px;
 }
 
 .navbar_menu_item.active {
-    border-radius: 50px;
     background-color: var(--color-white);
 }
 
+
 .navbar_menu_item:hover {
     color: var(--color-dark-grey);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s ease;
 }
 
-#navbar a span:hover {
+.contact:hover {
     color: var(--color-dark-grey);
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s ease;
 }
 
 /* Contents */
@@ -286,7 +287,8 @@ p {
 
 .work_tit {
     position: absolute;
-    padding: 20px 0 0 30px;
+    left: 20px;
+    top: 22px;
 }
 
 .work_tit h2 {
@@ -311,13 +313,14 @@ p {
 
 .work_btn {
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 16px;
+    bottom: 16px;
+    width: 90px;
+    height: 36px;
     color: var(--color-black);
     font-size: var(--font-micro);
     font-weight: var(--weight-bold);
     background-color: var(--color-white);
-    padding: 10px 16px;
     border-radius: 18px;
     font-family: 'Silka Regular', sans-serif;
 }

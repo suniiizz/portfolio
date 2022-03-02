@@ -12,9 +12,18 @@
     }
 
     .about {
-        padding: 40px 46px;
         width: 376px;
         height: 376px;
+    }
+
+    .about p {
+        font-size: var(--font-micro);
+        line-height: 26px;
+        width: 95%;
+    }
+
+    .about img {
+        transform: scale(1.5);
     }
 
     .work_grid_1 {
@@ -44,13 +53,9 @@
         height: 180px;
     }
 
-    .work_tit h2{
-        font-size: var(--font-regular);
-    }
-
     .work_btn {
-        padding: 9px 10px;
-        left: 20px;
+        width: 36px;
+        height: 36px;
     }
 
     .work_btn span {
@@ -61,6 +66,13 @@
         top: 604px;
         width: 376px;
         height: 376px;
+    }
+
+    .skill p {
+        font-size: var(--font-micro);
+        letter-spacing: 0.5px;
+        line-height: 26px;
+        text-overflow: ellipsis;
     }
 
     .animation_grid_1 {
@@ -111,6 +123,10 @@
         height: 344px;
     }
 
+    .about p {
+        width: 90%;
+    }
+
     .work_grid_1 {
         top: 556px;
         left: 196px;
@@ -137,15 +153,6 @@
         left: 16px;
         width: 343px;
         height: 164px;
-    }
-
-    .work_tit h2{
-        font-size: var(--font-regular);
-    }
-
-    .work_btn {
-        padding: 9px 10px;
-        left: 20px;
     }
 
     .work_btn span {
@@ -178,10 +185,6 @@
         left: 16px;
         width: 343px;
         height: 344px;
-    }
-
-    #animation p {
-        display: none;
     }
 
     #screen {
