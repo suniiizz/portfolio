@@ -1,208 +1,241 @@
 @media screen and (max-width: 1200px) {
-    #contents {
-        max-width: 800px;
-    }
+  #contents {
+    max-width: 800px;
+  }
 
-    #contents_layout {
-        height: 995px;
-    }
+  #contents_layout {
+    height: 995px;
+  }
 
-    h2 {
-        font-size: var(--font-regular);
-    }
+  h2 {
+    font-size: var(--font-regular);
+  }
 
-    .about {
-        width: 376px;
-        height: 376px;
-    }
+  .about {
+    width: 376px;
+    height: 376px;
+  }
 
-    .about p {
-        font-size: var(--font-micro);
-        line-height: 26px;
-        width: 95%;
-    }
+  .about p {
+    font-size: var(--font-micro);
+    line-height: 26px;
+    width: 95%;
+  }
 
-    .about img {
-        transform: scale(1.5);
-    }
+  .about img {
+    transform: scale(1.5);
+  }
 
-    .work_grid_1 {
-        left: 604px;
-        width: 180px;
-        height: 376px;
-    }
+  .work_grid_1 {
+    left: 604px;
+    width: 180px;
+    height: 376px;
+  }
 
-    .work_grid_2 {
-        top: 212px;
-        left: 408px;
-        width: 180px;
-        height: 376px;
-    }
+  .work_grid_1.active_btn2 {
+    top: 604px;
+  }
 
-    .work_grid_3 {
-        top: 408px;
-        left: 16px;
-        width: 376px;
-        height: 180px;
-    }
+  .work_grid_2 {
+    top: 212px;
+    left: 408px;
+    width: 180px;
+    height: 376px;
+  }
 
-    .work_grid_4 {
-        top: 604px;
-        left: 408px;
-        width: 376px;
-        height: 180px;
-    }
+  .work_grid_2.active_btn2 {
+    top: 408px;
+  }
 
-    .work_btn {
-        width: 36px;
-        height: 36px;
-    }
+  .work_grid_3 {
+    top: 408px;
+    left: 16px;
+    width: 376px;
+    height: 180px;
+  }
 
-    .work_btn span {
-        display: none;
-    }
+  .work_grid_4 {
+    top: 604px;
+    left: 408px;
+    width: 376px;
+    height: 180px;
+  }
 
-    .skill {
-        top: 604px;
-        width: 376px;
-        height: 376px;
-    }
+  .work_grid_4.active_btn2 {
+    top: 800px;
+    left: 212px;
+  }
 
-    .skill p {
-        font-size: var(--font-micro);
-        letter-spacing: 0.5px;
-        line-height: 26px;
-        text-overflow: ellipsis;
-    }
+  .work_btn {
+    width: 36px;
+    height: 36px;
+  }
 
-    .animation_grid_1 {
-        left: 408px;
-        width: 180px;
-        height: 180px;
-    }
-        
-    .animation_grid_2 {
-        top: 800px;
-        left: 408px;
-        width: 180px;
-        height: 180px;
-    }
+  .work_btn span {
+    display: none;
+  }
 
-    .animation_grid_3 {
-        top: 800px;
-        left: 604px;
-        width: 180px;
-        height: 180px;
-    }
+  .skill {
+    top: 604px;
+    width: 376px;
+    height: 376px;
+  }
 
-    #animation p {
-        display: none;
-    }
+  .skill.active_btn2 {
+    left: 408px;
+  }
 
-    #screen {
-        top: 408px;
-        left: 604px;
-        width: 180px;
-        height: 180px;
-    }
+  .skill p {
+    font-size: var(--font-micro);
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    text-overflow: ellipsis;
+  }
+
+  .animation_grid_1 {
+    left: 408px;
+    width: 180px;
+    height: 180px;
+  }
+  .animation_grid_1.active_btn2 {
+    top: 408px;
+    left: 16px;
+  }
+    
+  .animation_grid_2 {
+    top: 800px;
+    left: 408px;
+    width: 180px;
+    height: 180px;
+  }
+  .animation_grid_2.active_btn2 {
+    top: 408px;
+    left: 212px;
+  }
+
+  .animation_grid_3 {
+    top: 800px;
+    left: 604px;
+    width: 180px;
+    height: 180px;
+  }
+  .animation_grid_3.active_btn2 {
+    left: 16px;
+  }
+
+  #animation p {
+    display: none;
+  }
+
+  #screen {
+    top: 408px;
+    left: 604px;
+    width: 180px;
+    height: 180px;
+  }
+
+  #screen.active_btn2 {
+    top: 408px;
+    left: 604px;
+  }
 }
 
 @media screen and (max-width: 799px) {
-    #contents {
-        max-width: 375px;
-    }
+  #contents {
+    max-width: 375px;
+  }
 
-    #contents_layout {
-        height: 2180px;
-    }
+  #contents_layout {
+    height: 2180px;
+  }
 
-    .about {
-        top: 16px;
-        left: 16px;
-        width: 343px;
-        height: 344px;
-    }
+  .about {
+    top: 16px;
+    left: 16px;
+    width: 343px;
+    height: 344px;
+  }
 
-    .about p {
-        width: 90%;
-    }
+  .about p {
+    width: 90%;
+  }
 
-    .work_grid_1 {
-        top: 556px;
-        left: 196px;
-        width: 164px;
-        height: 344px;
-    }
+  .work_grid_1 {
+    top: 556px;
+    left: 196px;
+    width: 164px;
+    height: 344px;
+  }
 
-    .work_grid_2 {
-        top: 736px;
-        left: 16px;
-        width: 164px;
-        height: 344px;
-    }
+  .work_grid_2 {
+    top: 736px;
+    left: 16px;
+    width: 164px;
+    height: 344px;
+  }
 
-    .work_grid_3 {
-        top: 1816px;
-        left: 16px;
-        width: 343px;
-        height: 164px;
-    }
+  .work_grid_3 {
+    top: 1816px;
+    left: 16px;
+    width: 343px;
+    height: 164px;
+  }
 
-    .work_grid_4 {
-        top: 1996px;
-        left: 16px;
-        width: 343px;
-        height: 164px;
-    }
+  .work_grid_4 {
+    top: 1996px;
+    left: 16px;
+    width: 343px;
+    height: 164px;
+  }
 
-    .work_btn span {
-        display: none;
-    }
+  .work_btn span {
+    display: none;
+  }
 
-    .skill {
-        top: 1456px;
-        left: 16px;
-        width: 343px;
-        height: 344px;
-    }
+  .skill {
+    top: 1456px;
+    left: 16px;
+    width: 343px;
+    height: 344px;
+  }
 
-    .animation_grid_1 {
-        top: 376px;
-        left: 16px;
-        width: 343px;
-        height: 164px;
-    }
-        
-    .animation_grid_2 {
-        top: 556px;
-        left: 16px;
-        width: 164px;
-        height: 164px;
-    }
+  .animation_grid_1 {
+    top: 376px;
+    left: 16px;
+    width: 343px;
+    height: 164px;
+  }
+    
+  .animation_grid_2 {
+    top: 556px;
+    left: 16px;
+    width: 164px;
+    height: 164px;
+  }
 
-    .animation_grid_3 {
-        top: 1096px;
-        left: 16px;
-        width: 343px;
-        height: 344px;
-    }
+  .animation_grid_3 {
+    top: 1096px;
+    left: 16px;
+    width: 343px;
+    height: 344px;
+  }
 
-    #screen {
-        top: 916px;
-        left: 196px;
-        width: 164px;
-        height: 164px;
-    }
+  #screen {
+    top: 916px;
+    left: 196px;
+    width: 164px;
+    height: 164px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    #navbar {
-        flex-direction: column;
-        justify-content: center;
-        height: 200px;
-        padding: 0px 3.5vw;
-    }
-    .contact {
-        display: none;
-    }
+  #navbar {
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding: 0px 3.5vw;
+  }
+  .contact {
+    display: none;
+  }
 }

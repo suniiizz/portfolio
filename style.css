@@ -325,6 +325,7 @@ top: 608px;
   height: 280px;
   overflow: hidden;
   border-radius: 32px;
+  transition: all var(--animation-duration) ease;
 }
 
 .work_grid_4.active_btn3 {

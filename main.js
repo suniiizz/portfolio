@@ -29,7 +29,7 @@ $(document).ready(function() {
         opacity: 1
     });
 
-    $(".skill, .animation_grid_1, .work_grid_1, .work_grid_3, #screen").addClass("active_btn2");
+    $(".skill, .animation_grid_1, .animation_grid_2, .animation_grid_3, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").addClass("active_btn2");
     $(".about, .skill, .animation_grid_1, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").removeClass("active_btn3");
     $(".about, .skill, .work_grid_1, .work_grid_3, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
   })
