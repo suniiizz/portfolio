@@ -126,6 +126,7 @@ p {
   background-color: var(--color-dark-pink);
   border-radius: 23px;
   padding: 5px;
+  position: relative;
 }
 
 .navbar_logo .logo {
@@ -138,17 +139,46 @@ p {
   cursor: pointer;
   align-items: center;
   border-radius: 50px;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar_menu_item.active {
   background-color: var(--color-white);
 }
 
-
 .navbar_menu_item:hover {
   color: var(--color-dark-grey);
   transition: all 0.2s ease;
 }
+
+.navbar_bg {
+  border: 5px solid var(--color-dark-pink);
+  background-color: var(--color-white);
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  transition: all 500ms ease;
+}
+
+.navbar_menu_item.btn1.active ~ .navbar_bg {
+  width: 59.74px;
+  transform: translate(-5px, -5px);
+}
+.navbar_menu_item.btn2.active ~ .navbar_bg {
+  width: 84.23px;
+  transform: translate(45px, -5px);
+}
+.navbar_menu_item.btn3.active ~ .navbar_bg {
+  width: 91.98px;
+  transform: translate(119px, -5px);
+}
+.navbar_menu_item.btn4.active ~ .navbar_bg {
+  width: 112.73px;
+  transform: translate(201px, -5px);
+}
+
 
 .contact:hover {
   color: var(--color-dark-grey);
@@ -368,10 +398,14 @@ left: 16px;
 }
 
 .work_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
   position: absolute;
   left: 16px;
   bottom: 16px;
-  width: 90px;
+  /* width: 90px; */
   height: 36px;
   color: var(--color-black);
   font-size: var(--font-micro);
@@ -379,6 +413,10 @@ left: 16px;
   background-color: var(--color-white);
   border-radius: 18px;
   font-family: 'Silka Regular', sans-serif;
+}
+
+.work_btn:hover {
+  box-shadow: 0 4px 20px -2px rgba(0,0,0,0.2);
 }
 
 .work_btn span {
