@@ -23,15 +23,15 @@ $(document).ready(function() {
     
 
     $("#skill, #work, #animation, #screen").animate({
-        opacity: 0.2
+        opacity: 0.3
     });
     $("#about, #skill, #screen").animate({
         opacity: 1
     });
 
     $(".skill, .animation_grid_1, .animation_grid_2, .animation_grid_3, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").addClass("active_btn2");
-    $(".about, .skill, .animation_grid_1, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").removeClass("active_btn3");
-    $(".about, .skill, .work_grid_1, .work_grid_3, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
+    $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn3 active_btn4");
+    // $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
   })
 });
 
@@ -44,15 +44,15 @@ $(document).ready(function() {
     
   
     $("#about, #skill, #animation, #screen").animate({
-        opacity: 0.2
+        opacity: 0.3
       });
     $("#work, #screen").animate({
         opacity: 1
       });
     
-    $(".about, .skill, .animation_grid_1, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").addClass("active_btn3");
-    $(".skill, .animation_grid_1, .work_grid_1, .work_grid_3, #screen").removeClass("active_btn2");
-    $(".about, .skill, .work_grid_1, .work_grid_3, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
+    $(".about, .skill, .animation_grid_1, .animation_grid_2, .animation_grid_3, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").addClass("active_btn3");
+    $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn2 active_btn4");
+    // $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
   })
 });
 
@@ -65,15 +65,15 @@ $(document).ready(function() {
     
   
     $("#about, #skill, #work, #screen").animate({
-        opacity: 0.2
+        opacity: 0.3
       });
     $("#animation, #screen").animate({
         opacity: 1
       });
 
-    $(".about, .skill, .work_grid_1, .work_grid_3, .animation_grid_2, .animation_grid_3, #screen").addClass("active_btn4");
-    $(".skill, .animation_grid_1, .work_grid_1, .work_grid_3, #screen").removeClass("active_btn2");
-    $(".about, .skill, .animation_grid_1, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").removeClass("active_btn3");
+    $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").addClass("active_btn4");
+    $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn2 active_btn3");
+    // $(".about, .skill, .animation_grid_1, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").removeClass("active_btn3");
   })
 });
 

@@ -11,9 +11,22 @@
     font-size: var(--font-regular);
   }
 
+  .work_btn {
+    padding: 0;
+    justify-content: center;
+  }
+
+  /* about */
   .about {
     width: 376px;
     height: 376px;
+  }
+  .about.active_btn3 {
+    top: 408px;
+    left: 16px;
+  }
+  .about.active_btn4 {
+    top: 212px;
   }
 
   .about p {
@@ -26,14 +39,17 @@
     transform: scale(1.5);
   }
 
+  /* work */
   .work_grid_1 {
     left: 604px;
     width: 180px;
     height: 376px;
   }
-
   .work_grid_1.active_btn2 {
     top: 604px;
+  }
+  .work_grid_1.active_btn4 {
+    top: 212px;
   }
 
   .work_grid_2 {
@@ -42,9 +58,15 @@
     width: 180px;
     height: 376px;
   }
-
   .work_grid_2.active_btn2 {
     top: 408px;
+  }
+  .work_grid_2.active_btn3 {
+    top: 16px;
+    left: 408px;
+  }
+  .work_grid_2.active_btn4 {
+    top: 212px;
   }
 
   .work_grid_3 {
@@ -53,6 +75,9 @@
     width: 376px;
     height: 180px;
   }
+  .work_grid_3.active_btn4 {
+    top: 604px;
+  }
 
   .work_grid_4 {
     top: 604px;
@@ -60,10 +85,17 @@
     width: 376px;
     height: 180px;
   }
-
   .work_grid_4.active_btn2 {
     top: 800px;
     left: 212px;
+  }
+  .work_grid_4.active_btn3 {
+    top: 212px;
+    left: 16px;
+  }
+  .work_grid_4.active_btn4 {
+    top: 800px;
+    left: 16px;
   }
 
   .work_btn {
@@ -75,15 +107,21 @@
     display: none;
   }
 
+  /* skill */
   .skill {
     top: 604px;
     width: 376px;
     height: 376px;
   }
-
-  .skill.active_btn2 {
+  .skill.active_btn2,
+  .skill.active_btn3 {
     left: 408px;
   }
+  .skill.active_btn4 {
+    top: 604px;
+    left: 408px;
+  }
+  
 
   .skill p {
     font-size: var(--font-micro);
@@ -92,6 +130,7 @@
     text-overflow: ellipsis;
   }
 
+  /* animation */
   .animation_grid_1 {
     left: 408px;
     width: 180px;
@@ -100,6 +139,10 @@
   .animation_grid_1.active_btn2 {
     top: 408px;
     left: 16px;
+  }
+  .animation_grid_1.active_btn3 {
+    top: 408px;
+    left: 408px;
   }
     
   .animation_grid_2 {
@@ -112,6 +155,10 @@
     top: 408px;
     left: 212px;
   }
+  .animation_grid_2.active_btn3, 
+  .animation_grid_2.active_btn4 {
+    left: 16px;
+  }
 
   .animation_grid_3 {
     top: 800px;
@@ -122,11 +169,16 @@
   .animation_grid_3.active_btn2 {
     left: 16px;
   }
+  .animation_grid_3.active_btn3,
+  .animation_grid_3.active_btn4 {
+    left: 212px;
+  }
 
   #animation p {
     display: none;
   }
 
+  /* screen */
   #screen {
     top: 408px;
     left: 604px;
@@ -149,83 +201,172 @@
     height: 2180px;
   }
 
+  /* about */
   .about {
     top: 16px;
     left: 16px;
     width: 343px;
     height: 344px;
   }
+  .about.active_btn3 {
+    top: 916px;
+  }
+  .about.active_btn4 {
+    top: 736px;
+  }
 
   .about p {
     width: 90%;
   }
 
+  /* work */
   .work_grid_1 {
-    top: 556px;
+    top: 376px;
     left: 196px;
     width: 164px;
     height: 344px;
   }
+  .work_grid_1.active_btn2 {
+    top: 736px;
+    right: 16px;
+  }
+  .work_grid_1.active_btn4 {
+    top: 1096px;
+  }
 
   .work_grid_2 {
-    top: 736px;
+    top: 556px;
     left: 16px;
     width: 164px;
     height: 344px;
   }
+  .work_grid_2.active_btn2 {
+    top: 916px;
+    left: 16px;
+  }
+  .work_grid_2.active_btn3 {
+    top: 376px;
+    left: 16px;
+  }
+  .work_grid_2.active_btn4 {
+    top: 1096px;
+  }
 
   .work_grid_3 {
-    top: 1816px;
+    top: 916px;
     left: 16px;
     width: 343px;
     height: 164px;
   }
+  .work_grid_3.active_btn2 {
+    top: 1276px;
+  }
+  .work_grid_3.active_btn4 {
+    top: 1456px;
+  }
 
   .work_grid_4 {
-    top: 1996px;
+    top: 1096px;
     left: 16px;
     width: 343px;
     height: 164px;
+  }
+  .work_grid_4.active_btn2 {
+    top: 1456px;
+    left: 16px;
+  }
+  .work_grid_4.active_btn3 {
+    top: 196px;
+  }
+  .work_grid_4.active_btn4 {
+    top: 1636px;
   }
 
   .work_btn span {
     display: none;
   }
 
+  /* skill */
   .skill {
-    top: 1456px;
+    top: 1276px;
     left: 16px;
     width: 343px;
     height: 344px;
   }
-
-  .animation_grid_1 {
+  .skill.skill.active_btn2 {
     top: 376px;
+    left: 16px;
+  }
+  .skill.skill.active_btn3 {
+    top: 1456px;
+    left: 16px;
+  }
+  .skill.skill.active_btn4 {
+    top: 1816px;
+    left: 16px;
+  }
+
+  /* animation */
+  .animation_grid_1 {
+    top: 1636px;
     left: 16px;
     width: 343px;
     height: 164px;
   }
+  .animation_grid_1.active_btn2 {
+    top: 1996px;
+  }
+  .animation_grid_1.active_btn3 {
+    top: 1276px;
+    left: 16px;
+  }
+  .animation_grid_1.active_btn4 {
+    top: 556px;
+  }
     
   .animation_grid_2 {
-    top: 556px;
+    top: 376px;
     left: 16px;
     width: 164px;
     height: 164px;
   }
+  .animation_grid_2.active_btn2 {
+    top: 1096px;
+    left: 196px;
+  }
+  .animation_grid_2.active_btn3 {
+    top: 736px;
+  }
 
   .animation_grid_3 {
-    top: 1096px;
+    top: 1816px;
     left: 16px;
     width: 343px;
     height: 344px;
   }
+  .animation_grid_3.active_btn2 {
+    top: 1636px;
+  }
+  .animation_grid_3.active_btn3 {
+    left: 16px;
+  }
+  .animation_grid_3.active_btn4 {
+    top: 196px;
+    left: 16px;
+  }
 
+  /* screen */
   #screen {
-    top: 916px;
+    top: 736px;
     left: 196px;
     width: 164px;
     height: 164px;
   }
+  #screen.active_btn2 {
+    top: 736px;
+    left: 16px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
