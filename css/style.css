@@ -27,7 +27,7 @@
   --color-blue: #98CFFF;
   --color-yellow: #FEE2A3;
   --color-green: #6CCFB3;
-  --color-black: #000000;
+  --color-black: #0d1117;
 
   /* Font size */ 
   --font-large: 48px;
@@ -107,8 +107,11 @@ p {
   font-weight: var(--weght-regular);
   color: var(--color-black);
   margin: 8px 0;
-  /* font-family: 'Silka Regular', sans-serif; */
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+span {
+  color: var(--color-black);
 }
 
 /* Navbar */
@@ -142,6 +145,7 @@ p {
   border-radius: 50px;
   position: relative;
   z-index: 10;
+  color: var(--color-black);
 }
 
 .navbar_menu_item.active {
@@ -398,13 +402,13 @@ left: 16px;
 
 .work_btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 16px;
+  padding: 0;
   position: absolute;
   left: 16px;
   bottom: 16px;
-  /* width: 90px; */
+  width: 36px;
   height: 36px;
   color: var(--color-black);
   font-size: var(--font-micro);
@@ -412,14 +416,25 @@ left: 16px;
   background-color: var(--color-white);
   border-radius: 18px;
   font-family: 'Silka Regular', sans-serif;
+  transition: all var(--animation-duration) ease;
+  overflow: hidden;
+}
+
+.work_btn .work_btn_text {
+  margin-left: 5px;
+  display: none;
 }
 
 .work_btn:hover {
+  width: 90px;
+  justify-content: space-between;
+  padding: 0 16px;
   box-shadow: 0 4px 20px -2px rgba(0,0,0,0.2);
 }
 
-.work_btn span {
-  margin-left: 5px;
+.work_btn:hover .work_btn_text {
+  display: block;
+  z-index: inherit;
 }
 
 .work_btn i {

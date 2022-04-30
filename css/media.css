@@ -11,11 +11,6 @@
     font-size: var(--font-regular);
   }
 
-  .work_btn {
-    padding: 0;
-    justify-content: center;
-  }
-
   /* about */
   .about {
     width: 376px;
@@ -99,6 +94,8 @@
   }
 
   .work_btn {
+    padding: 0;
+    justify-content: center;
     width: 36px;
     height: 36px;
   }
@@ -370,13 +367,24 @@
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    position: relative;
+  }
+
   #navbar {
     flex-direction: column;
     justify-content: center;
     height: 200px;
     padding: 0px 3.5vw;
   }
+
+  .navbar_logo {
+    margin: 30px 0;
+  }
+
   .contact {
-    display: none;
+    position: absolute;
+    bottom: 50px;
+    z-index: 5;
   }
 }
