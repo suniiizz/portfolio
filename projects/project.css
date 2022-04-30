@@ -99,7 +99,6 @@ h3 {
   color: var(--color-black);
   padding: 0 0 10px 10px;
   font-family: 'Silka Medium', sans-serif;
-  border-bottom: 1px dashed var(--color-black);
 }
 
 p {
@@ -146,12 +145,12 @@ p {
   align-items: center;
   padding: 0 16px;
   width: 90px;
-  height: 36px;
+  height: 38px;
   color: var(--color-black);
   font-size: var(--font-micro);
   font-weight: var(--weight-bold);
   background-color: var(--color-dark-pink);
-  border-radius: 18px;
+  border-radius: 20px;
   font-family: 'Silka Regular', sans-serif;
 }
 
@@ -160,21 +159,30 @@ p {
 }
 
 .project_desc .desc {
+  margin-top: 10px;
+}
+
+.project_desc .standard_desc {
   margin-top: 4px;
 }
 
 .project_desc .standard_desc .standard_desc_p {
-  margin: 10px 10px 50px;
+  margin-bottom: 50px;
+  padding: 10px 10px 0;
 }
 
 .project_desc .standard_desc p {
-  margin: 10px 10px 0;
+  margin: 0 0 10px 0;
+  padding: 10px 10px 0 10px;
+  border-top: 1px dashed var(--color-black);
 }
 
-.project_desc p { 
+.project_desc .desc p { 
+  margin: 0 0 10px 0;
+  padding-top: 10px;
   line-height: 30px;
+  border-top: 1px dashed var(--color-black);
 }
-
 
 .preview_layout {
   position: relative;

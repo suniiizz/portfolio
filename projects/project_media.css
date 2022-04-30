@@ -83,8 +83,8 @@
     line-height: 34px;
   }
 
-  .project_desc .desc p {
-    margin: 10px 10px 40px;
+  .project_desc p { 
+    line-height: 30px;
   }
 
   .preview_layout {
