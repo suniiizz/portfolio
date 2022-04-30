@@ -27,10 +27,10 @@
   --color-blue: #98CFFF;
   --color-yellow: #FEE2A3;
   --color-green: #6CCFB3;
-  --color-black: #000000;
+  --color-black: #0d1117;
 
   /* Font size */ 
-  --font-large: 48px;
+  --font-large: 38px;
   --font-medium: 28px;
   --font-regular: 20px;
   --font-small: 16px;
@@ -82,7 +82,7 @@ h1 {
   font-weight: var(--weight-bold);
   color: var(--color-black);
   font-family: 'Moranga Bold', sans-serif;
-
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -94,29 +94,35 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-regular);
+  font-size: 18px;
   font-weight: var(--weght-regular);
   color: var(--color-black);
-  margin: 12px 0;
+  padding: 0 0 10px 10px;
   font-family: 'Silka Medium', sans-serif;
+  border-bottom: 1px dashed var(--color-black);
 }
 
 p {
-  font-size: var(--font-regular);
+  font-size: var(--font-small);
   font-weight: var(--weght-regular);
   color: var(--color-black);
-  margin: 8px 0;
+  margin-bottom: 16px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 .project {
-  padding: 50px;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0 120px 0;
+  transition: all 0.3s ease-out 0s;
 }
 
 .project_wrap {
-  padding: 0 150px;
-  margin-top: 100px;
+  position: relative;
+}
+
+.project_top {
+  padding: 0 60px;
 }
 
 .project_desc ul {
@@ -124,24 +130,97 @@ p {
   justify-content: space-between;
 }
 
-.info a {
+.project_desc ul li {
+  width: calc(50% - 30px);
+}
+
+.project_desc .info p {
+  font-size: 22px;
+  font-weight: var(--weght-semi-bold);
+  line-height: 40px;
+}
+
+.project_desc .info a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  /* position: absolute;
-  left: 16px;
-  bottom: 16px; */
   width: 90px;
   height: 36px;
   color: var(--color-black);
   font-size: var(--font-micro);
   font-weight: var(--weight-bold);
-  background-color: var(--color-white);
+  background-color: var(--color-dark-pink);
   border-radius: 18px;
   font-family: 'Silka Regular', sans-serif;
 }
 
-.info a i {
+.project_desc .info a i {
   transform: rotate(-45deg);
+}
+
+.project_desc .desc {
+  margin-top: 4px;
+}
+
+.project_desc .standard_desc .standard_desc_p {
+  margin: 10px 10px 50px;
+}
+
+.project_desc .standard_desc p {
+  margin: 10px 10px 0;
+}
+
+.project_desc p { 
+  line-height: 30px;
+}
+
+
+.preview_layout {
+  position: relative;
+  height: 608px;
+  margin-top: 40px;
+  transition: height .2s ease;
+}
+
+.box {
+  position: absolute;
+  background-color: var(--color-white);
+  border-radius: 32px;
+  transition: all 500ms ease 0s;
+}
+
+.preview1 {
+  width: 576px;
+  height: 280px;
+  left: 16px;
+  top: 16px;
+}
+
+.preview2 {
+  width: 280px;
+  height: 280px;
+  left: 608px;
+  top: 16px;
+}
+
+.preview3 {
+  width: 280px;
+  height: 576px;
+  right: 16px;
+  top: 16px;
+}
+
+.preview4 {
+  width: 280px;
+  height: 280px;
+  left: 16px;
+  top: 312px;
+}
+
+.preview5 {
+  width: 576px;
+  height: 280px;
+  left: 312px;
+  top: 312px;
 }
