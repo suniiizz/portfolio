@@ -1,0 +1,147 @@
+/* font */
+@font-face {
+  font-family: 'Silka Regular';
+  src:url('/font/Silka-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Silka Medium';
+  src:url('/font/Silka-Medium.woff') format('woff2');
+}
+@font-face {
+  font-family: 'Moranga Bold';
+  src:url('/font/Moranga-Bold.woff') format('woff');
+}
+
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #FEC5D7;
+  --color-light-pink: #F7F2F2;
+  --color-dark-pink: #ECE9E9;
+  --color-dark-grey: #8F8F8F;
+  --color-grey: #EFF2F7;
+  --color-light-grey: #F5f5f5;
+  --color-blue: #98CFFF;
+  --color-yellow: #FEE2A3;
+  --color-green: #6CCFB3;
+  --color-black: #000000;
+
+  /* Font size */ 
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 20px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weght-semi-bold: 600;
+  --weght-regular: 400;
+
+  /* Annimation */
+  --animation-duration: 500ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+  background: var(--color-light-pink);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Typo */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  font-family: 'Moranga Bold', sans-serif;
+
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weght-semi-bold);
+  color: var(--color-black);
+  margin: 12px 0;
+  font-family: 'Moranga Bold', sans-serif;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weght-regular);
+  color: var(--color-black);
+  margin: 12px 0;
+  font-family: 'Silka Medium', sans-serif;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weght-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+.project {
+  padding: 50px;
+  width: 100%;
+}
+
+.project_wrap {
+  padding: 0 150px;
+  margin-top: 100px;
+}
+
+.project_desc ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  /* position: absolute;
+  left: 16px;
+  bottom: 16px; */
+  width: 90px;
+  height: 36px;
+  color: var(--color-black);
+  font-size: var(--font-micro);
+  font-weight: var(--weight-bold);
+  background-color: var(--color-white);
+  border-radius: 18px;
+  font-family: 'Silka Regular', sans-serif;
+}
+
+.info a i {
+  transform: rotate(-45deg);
+}
