@@ -114,20 +114,6 @@ span {
   color: var(--color-black);
 }
 
-/* @media (hover: hover) {
-  .work_btn:hover {
-    width: 90px;
-    justify-content: space-between;
-    padding: 0 16px;
-    box-shadow: 0 4px 20px -2px rgba(0,0,0,0.2);
-  }
-  
-  .work_btn:hover .work_btn_text {
-    display: block;
-    z-index: inherit;
-  }
-} */
-
 /* Navbar */
 #navbar {
   display: flex;
@@ -198,7 +184,7 @@ span {
   transform: translate(201px, -5px);
 }
 
-.contact:hover {
+.contact span:hover {
   color: var(--color-dark-grey);
   transition: all 0.2s ease;
 }
@@ -391,7 +377,7 @@ left: 16px;
 .work_tit {
   position: absolute;
   left: 20px;
-  top: 22px;
+  top: 20px;
 }
 
 .work_tit h2 {
@@ -541,9 +527,4 @@ top: 16px;
   font-family: 'Moranga Bold', sans-serif;
   margin: 0;
   padding: 24px 0 0 40px;
-}
-
-/* Contact */
-#contact {
-  position: absolute;
 }

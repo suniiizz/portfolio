@@ -1,15 +1,15 @@
 /* font */
 @font-face {
   font-family: 'Silka Regular';
-  src:url('/font/Silka-Regular.woff') format('woff');
+  src: url('../font/Silka-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Silka Medium';
-  src:url('/font/Silka-Medium.woff') format('woff2');
+  src: url('../font/Silka-Medium.woff') format('woff2');
 }
 @font-face {
   font-family: 'Moranga Bold';
-  src:url('/font/Moranga-Bold.woff') format('woff');
+  src: url('../font/Moranga-Bold.woff') format('woff');
 }
 
 /* Global */
@@ -133,10 +133,29 @@ p {
   width: calc(50% - 30px);
 }
 
+.project_desc .work {
+  width: 100% !important;
+}
+
 .project_desc .info p {
   font-size: 22px;
   font-weight: var(--weght-semi-bold);
   line-height: 40px;
+}
+
+.project_desc .info .tag {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.project_desc .info .tag p {
+  font-size: 18px;
+}
+
+.project_desc .info .tag_work {
+  width: 40%;
 }
 
 .project_desc .info a {
@@ -154,6 +173,10 @@ p {
   font-family: 'Silka Regular', sans-serif;
 }
 
+.project_desc .info a:hover {
+  background-color: #E2E0E0;
+}
+
 .project_desc .info a i {
   transform: rotate(-45deg);
 }
@@ -162,16 +185,16 @@ p {
   margin-top: 10px;
 }
 
-.project_desc .standard_desc {
+.project_desc .desc_tit {
   margin-top: 4px;
 }
 
-.project_desc .standard_desc .standard_desc_p {
+.project_desc .desc_tit .desc_txt {
   margin-bottom: 50px;
   padding: 10px 10px 0;
 }
 
-.project_desc .standard_desc p {
+.project_desc .desc_tit p {
   margin: 0 0 10px 0;
   padding: 10px 10px 0 10px;
   border-top: 1px dashed var(--color-black);

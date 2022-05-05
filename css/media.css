@@ -198,6 +198,16 @@
     height: 2180px;
   }
 
+  /* nav */
+  .navbar_menu_item:hover {
+    color: inherit;
+    transition: none;
+  }
+
+  .contact span:hover {
+    color: inherit;
+  }
+
   /* about */
   .about {
     top: 16px;
@@ -277,6 +287,15 @@
   }
   .work_grid_4.active_btn4 {
     top: 1636px;
+  }
+
+  .work_btn:hover {
+    width: 36px;
+    justify-content: center;
+  }
+  
+  .work_btn:hover .work_btn_text {
+    display: none;
   }
 
   /* skill */
