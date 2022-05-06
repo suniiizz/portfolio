@@ -221,6 +221,10 @@ p {
   transition: all 500ms ease 0s;
 }
 
+.box img {
+  width: 100%;
+}
+
 .preview1 {
   width: 576px;
   height: 280px;
