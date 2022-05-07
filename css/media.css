@@ -323,7 +323,7 @@
     top: 1636px;
     left: 16px;
     width: 343px;
-    height: 164px;
+    height: 343px;
   }
   .animation_grid_1.active_btn2 {
     top: 1996px;
@@ -333,7 +333,7 @@
     left: 16px;
   }
   .animation_grid_1.active_btn4 {
-    top: 556px;
+    top: 376px;
   }
     
   .animation_grid_2 {
@@ -351,10 +351,10 @@
   }
 
   .animation_grid_3 {
-    top: 1816px;
+    top: 1995px;
     left: 16px;
     width: 343px;
-    height: 344px;
+    height: 164px;
   }
   .animation_grid_3.active_btn2 {
     top: 1636px;

@@ -90,7 +90,7 @@ textarea {
 /*반응형 이미지 */
 img {
   display: block;
-  /* width: 100%; */
+  width: 100%;
 }
 
 /* IR 효과 */

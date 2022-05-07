@@ -228,6 +228,7 @@ top: 312px;
 }
 
 .about img {
+  width: 100px;
   height: 100px;
 }
 
@@ -446,15 +447,19 @@ left: 16px;
   display: flex;
 }
 
+/* animation_1 */
 .animation_grid_1 {
   position: absolute;
   top: 16px;
   left: 608px;
   width: 280px;
   height: 280px;
-  background: var(--color-white);
+  background: #98cfff;
   border-radius: 32px;
   transition: all var(--animation-duration) ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .animation_grid_1.active_btn2 {
@@ -466,6 +471,519 @@ left: 16px;
 top: 608px;
 }
 
+/* weather */
+.animation_grid_1 .weather {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-top: 30px;
+}
+
+/* sun */
+.animation_grid_1 .sun {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 85px;
+  height: 85px;
+  background: #f9db62;
+  border-radius: 360px;
+  opacity: 1;
+  animation: sun 10s 0s linear infinite;
+}
+
+@keyframes sun {
+  0%{
+    opacity: 1;
+    bottom: 35px;
+    right: 35px;
+  }
+  4%{
+    bottom: 80px;
+    right: 80px;
+  }
+  4.5%{
+    bottom: 75px;
+    right: 75px;
+    opacity: 1;
+  }
+  15%{
+    opacity: 1;
+  }
+  16%{
+    bottom: 75px;
+    right: 75px;
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+/* cloud */
+.animation_grid_1 .cloud {
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+  z-index: 2;
+  opacity: 0;
+  animation: cloud 10s 0s linear infinite;
+}
+
+.animation_grid_1 .cloud .cloud_1:not(.c_shadow) ul li{
+  animation: cloudi 10s 0.1s linear infinite;
+}
+
+.animation_grid_1 .cloud .cloud_1:not(.c_shadow):before{
+  animation: cloudi 10s 0s linear infinite;
+}
+
+.animation_grid_1 .cloud .c_shadow{
+  z-index: 4 !important;
+  left: -5px;
+  bottom: -3px !important;
+}
+
+.animation_grid_1 .cloud .c_shadow:before{
+  background: #98cfff !important;
+}
+
+.animation_grid_1 .cloud .c_shadow ul li{
+  width: 60px !important;
+  height: 60px !important;
+  background: #98cfff !important;
+  float: left;
+  position: absolute;
+  bottom: -2px !important;
+  border-radius: 360px;
+}
+
+.animation_grid_1 .cloud .c_shadow ul li:nth-child(2){
+  width: 80px !important;
+  height: 80px !important;
+  background: #98cfff !important;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 16px !important;
+  left: 25px !important;
+}
+
+.animation_grid_1 .cloud .c_shadow ul li:nth-child(3){
+  width: 70px !important;
+  height: 70px !important;
+  background: #98cfff !important;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 6px !important;
+  left: 60px !important;
+}
+
+.animation_grid_1 .cloud .c_shadow ul li:last-child{
+  width: 60px !important;
+  height: 60px !important;
+  background: #98cfff !important;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 0px;
+  left: 90px;
+}
+
+.animation_grid_1 .cloud .cloud_1 {
+  position: absolute;
+  bottom: 0px;
+  z-index: 5;
+}
+
+.animation_grid_1 .cloud .cloud_1:before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 28px;
+  width: 90px;
+  height: 20px;
+  background: #fff;
+}
+
+.animation_grid_1 .cloud .cloud_1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.animation_grid_1 .cloud .cloud_1 ul li {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+}
+
+.animation_grid_1 .cloud .cloud_1 ul li:nth-child(2) {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 18px;
+  left: 25px;
+}
+
+.animation_grid_1 .cloud .cloud_1 ul li:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 8px;
+  left: 60px;
+}
+
+.animation_grid_1 .cloud .cloud_1 ul li:last-child {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 0px;
+  left: 90px;
+}
+
+@keyframes cloud {
+  0%{
+    transform: scale(0.95);
+    left: 120px;
+    bottom: 35px;
+    opacity: 0;
+  }
+  2%{
+    opacity: 1;
+  }
+  3.5%{
+    bottom: 35px;
+    left: 10px;
+    opacity: 1;
+  }
+  17%{
+    opacity: 1;
+    bottom: 35px;
+  }
+  19%{
+    bottom: 70px;
+  }
+  70%{
+    opacity: 1;
+  }
+  76%{
+    opacity: 0;
+    bottom: 70px;
+    left: 10px;
+  }
+}
+
+@keyframes cloudi {
+  0%{
+    background: #fff;
+  }
+  35%{
+    background: #fff;
+  }
+  40%{
+    background: #abc0d5;
+  }
+  100%{
+    background: #abc0d5;
+  }
+}
+
+/* haze */
+.animation_grid_1 .haze {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 150px;
+  height: 45px;
+  z-index: 6;
+  opacity: 0;
+  animation: haze 10s 0s linear infinite;
+  background: #98cfff;
+}
+
+.animation_grid_1 .haze_line {
+  position: absolute;
+  bottom: 75px;
+  left: 20px;
+  width: 115px;
+  height: 10px;
+  z-index: 17;
+  opacity: 0;
+  border-radius: 360px;
+  animation: haze_line 10s .1s linear infinite;
+  background: #c5d5e6;
+}
+
+.animation_grid_1 .haze_line:nth-child(6) {
+  bottom: 55px;
+  animation: haze_line 10s .2s linear infinite;
+}
+
+.animation_grid_1 .haze_line:last-child {
+  bottom: 35px;
+  animation: haze_line 10s .4s linear infinite;
+}
+
+@keyframes haze {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    height: 0px;
+    opacity: 0;
+  }
+  22%{
+    height: 45px;
+    opacity: 1;
+  }
+  38%{
+    opacity:1;
+    height: 45px;
+  }
+  39%{
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@keyframes haze_line {
+  0%{
+    opacity: 0;
+  }
+  23%{
+    opacity: 0;
+  }
+  24%{
+    opacity: 1;
+  }
+  35%{
+    opacity: 0;
+  }
+}
+
+/* thunder */
+.animation_grid_1 .thunder {
+  position: absolute;
+  bottom: 90px;
+  left: 65px;
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  transform: skew(-25deg);
+  animation: thunder 10s 0s linear infinite;
+  background: #f9db62;
+}
+
+.animation_grid_1 .thunder::before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 25px;
+  height: 8px;
+  background: #f9db62;
+}
+
+.animation_grid_1 .thunder:after{
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 0;
+  top: 18px;
+  right: -14px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 20px solid #f9db62;
+  transform: skew(5deg);
+}
+
+@keyframes thunder {
+  0%{
+    opacity: 0;
+    bottom: 90px;
+    left: 65px;
+  }
+  42%{
+    opacity: 0;
+    bottom: 90px;
+  }
+  44%{
+    opacity: 1;
+    bottom: 40px;
+  }
+  45%{
+    opacity: 1;
+    bottom: 45px;
+  }
+  55%{
+    opacity: 1;
+    bottom: 45px;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+
+/* rain */
+.animation_grid_1 .rain{
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+}
+
+.animation_grid_1 .rain ul li {
+  float: left;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  margin-left: 20px;
+  background: #fff;
+  width: 10px;
+  height: 40px;
+  border-radius: 360px;
+  transform: rotate(35deg);
+  opacity: 0;
+}
+
+.animation_grid_1 .rain ul li:first-child{
+  animation: raini 10s 0s linear infinite;
+}
+
+.animation_grid_1 .rain ul li:nth-child(2){
+  animation: rainii 10s 0.2s linear infinite;
+}
+
+.animation_grid_1 .rain ul li:last-child{
+  animation: rainiii 10s 0.4s linear infinite;
+}
+
+@keyframes raini {
+  0%{
+    opacity: 0;
+    bottom: 90px;
+    left: 60px;
+  }
+  60%{
+    opacity: 0;
+    bottom: 90px;
+    left: 60px;
+  }
+  61%{
+    opacity: 1;
+    bottom: 10px;
+    left: 50px;
+  }
+  62%{
+    opacity: 1;
+    bottom: 20px;
+    left: 52px;
+  }
+  66%{
+    opacity: 1;
+    bottom: 20px;
+    left: 52px;
+  }
+  70%{
+    opacity: 0;
+    bottom: -10px;
+    left: 6px;
+  }
+  100%{
+    opacity: 0;
+    bottom: 15px;
+  }
+}
+
+@keyframes rainii {
+  0%{
+    opacity: 0;
+    bottom: 90px;
+    left: 30px;
+  }
+  60%{
+    opacity: 0;
+    bottom: 90px;
+    left: 30px;
+  }
+  61%{
+    opacity: 1;
+    bottom: 10px;
+    left: 20px;
+  }
+  62%{
+    opacity: 1;
+    bottom: 20px;
+    left: 22px;
+  }
+  66%{
+    opacity: 1;
+    bottom: 20px;
+    left: 22px;
+  }
+  70%{
+    opacity: 0;
+    bottom: -1px;
+    left: -6px;
+  }
+  100%{
+    opacity: 0;
+    bottom: 15px;
+  }
+}
+
+@keyframes rainiii {
+  0%{
+    opacity: 0;
+    bottom: 90px;
+    left: 0px;
+  }
+  60%{
+    opacity: 0;
+    bottom: 90px;
+    left: 0px;
+  }
+  61%{
+    opacity: 1;
+    bottom: 10px;
+    left: -10px;
+  }
+  62%{
+    opacity: 1;
+    bottom: 20px;
+    left: -8px;
+  }
+  66%{
+    opacity: 1;
+    bottom: 20px;
+    left: -8px;
+  }
+  70%{
+    opacity: 0;
+    bottom: -10px;
+    left: -28px;
+  }
+  100%{
+    opacity: 0;
+    bottom: 15px;
+  }
+}
+
+/* animation_2 */
 .animation_grid_2 {
   position: absolute;
   top: 904px;
@@ -475,12 +993,103 @@ top: 608px;
   background: var(--color-white);
   border-radius: 32px;
   transition: all var(--animation-duration) ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .animation_grid_2.active_btn4 {
-top: 16px;
+  top: 16px;
+  }
+
+.animation_grid_2 .scan {
+  width: 60%;
+  padding: 25px 30px;
+  transition: transform .4s ease-out;
+  margin: 0 auto;
+  position: relative;
 }
 
+.animation_grid_2 .scan::before,
+.animation_grid_2 .scan::after,
+.animation_grid_2 .scan>:first-child::before,
+.animation_grid_2 .scan>:first-child::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  border: solid var(--color-dark-pink);
+}
+
+/* top left corner */
+.animation_grid_2 .scan::before {
+	top: 10px; 
+  left: 10px;
+	border-width: 4px 0 0 4px;
+}
+
+/* top right corner */
+.animation_grid_2 .scan::after {
+  top: 10px;
+  right: 10px;
+  border-width: 4px 4px 0 0;
+}
+
+/* bottom right corner */
+.animation_grid_2 .scan>:first-child::before {
+  bottom: 10px;
+  right: 10px;
+  border-width: 0 4px 4px 0;
+}
+
+/* bottom left corner */
+.animation_grid_2 .scan>:first-child::after {
+  bottom: 10px;
+  left: 10px;
+  border-width: 0 0 4px 4px;
+}
+
+.animation_grid_2 .scan:hover {
+	transform: scale(1.2);
+}
+
+.animation_grid_2 .scan:hover .scanner {
+  animation-play-state: running;
+}
+
+.animation_grid_2 .scan .scanner {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+  opacity: 0.7;
+  box-shadow: 0px 0px 8px 10px rgba(255, 17, 37, 0.49);
+  top: 50%;
+  left: 0;
+  animation-name: scan;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  z-index: 2;
+}
+
+@keyframes scan {
+  0% {
+    box-shadow: 0px 0px 8px 10px rgba(255, 17, 37, 0.49);
+    top: 50%;
+  }
+  25% {
+    box-shadow: 0px 6px 8px 10px rgba(255, 17, 37, 0.49);
+    top: 5px;
+  }
+  75% {
+    box-shadow: 0px -6px 8px 10px rgba(255, 17, 37, 0.49);
+    top: 98%;
+  }
+}
+
+/* animation_3 */
 .animation_grid_3 {
   position: absolute;
   top: 904px;
@@ -499,7 +1108,9 @@ top: 16px;
 #animation p {
   font-family: 'Moranga Bold', sans-serif;
   font-size: var(--font-medium);
-  padding: 24px 0 0 40px;
+  /* padding: 24px 0 0 40px; */
+  text-align: center;
+  margin: 0;
 }
 
 /* Screen */
