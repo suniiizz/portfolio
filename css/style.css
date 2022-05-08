@@ -486,7 +486,7 @@ top: 608px;
   right: 0px;
   width: 85px;
   height: 85px;
-  background: #f9db62;
+  background: #ffe3A4;
   border-radius: 360px;
   opacity: 1;
   animation: sun 10s 0s linear infinite;
@@ -587,12 +587,6 @@ top: 608px;
   background: #fff;
 }
 
-.animation_grid_1 .cloud .cloud_1 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .animation_grid_1 .cloud .cloud_1 ul li {
   width: 50px;
   height: 50px;
@@ -659,7 +653,13 @@ top: 608px;
   60%{
     opacity: 1;
   }
-  100%{
+  80%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+  }
+  95%{
     opacity: 0;
     bottom: 70px;
     left: 10px;
@@ -676,7 +676,7 @@ top: 608px;
   40%{
     background: #abc0d5;
   }
-  100%{
+  95%{
     background: #abc0d5;
   }
 }
@@ -729,7 +729,7 @@ top: 608px;
     height: 45px;
     opacity: 1;
   }
-  38%{
+  41%{
     opacity:1;
     height: 45px;
   }
@@ -764,7 +764,7 @@ top: 608px;
   opacity: 0;
   transform: skew(-25deg);
   animation: thunder 10s 0s linear infinite;
-  background: #f9db62;
+  background: #ffe3A4;
 }
 
 .animation_grid_1 .thunder::before {
@@ -774,7 +774,7 @@ top: 608px;
   left: 0;
   width: 25px;
   height: 8px;
-  background: #f9db62;
+  background: #ffe3A4
 }
 
 .animation_grid_1 .thunder:after{
@@ -786,7 +786,7 @@ top: 608px;
   right: -14px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 20px solid #f9db62;
+  border-top: 20px solid #ffe3A4;
   transform: skew(5deg);
 }
 
@@ -825,7 +825,20 @@ top: 608px;
   left: 25px;
 }
 
-.animation_grid_1 .rain ul li,
+.animation_grid_1 .rain ul li {
+  float: left;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  margin-left: 20px;
+  background: #7ac4f3;
+  width: 10px;
+  height: 40px;
+  border-radius: 360px;
+  transform: rotate(35deg);
+  opacity: 0;
+}
+
 .animation_grid_1 .rain_2 ul li {
   float: left;
   position: absolute;
