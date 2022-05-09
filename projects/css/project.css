@@ -1,15 +1,15 @@
 /* font */
 @font-face {
   font-family: 'Silka Regular';
-  src: url('../font/Silka-Regular.woff') format('woff');
+  src: url('../../font/Silka-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Silka Medium';
-  src: url('../font/Silka-Medium.woff') format('woff2');
+  src: url('../../font/Silka-Medium.woff') format('woff2');
 }
 @font-face {
   font-family: 'Moranga Bold';
-  src: url('../font/Moranga-Bold.woff') format('woff');
+  src: url('../../font/Moranga-Bold.woff') format('woff');
 }
 
 /* Global */
