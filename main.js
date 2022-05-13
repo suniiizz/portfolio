@@ -31,7 +31,6 @@ $(document).ready(function() {
 
     $(".skill, .animation_grid_1, .animation_grid_2, .animation_grid_3, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").addClass("active_btn2");
     $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn3 active_btn4");
-    // $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
   })
 });
 
@@ -52,7 +51,6 @@ $(document).ready(function() {
     
     $(".about, .skill, .animation_grid_1, .animation_grid_2, .animation_grid_3, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").addClass("active_btn3");
     $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn2 active_btn4");
-    // $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn4");
   })
 });
 
@@ -73,7 +71,15 @@ $(document).ready(function() {
 
     $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").addClass("active_btn4");
     $(".about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .animation_grid_1, .animation_grid_2, .animation_grid_3, #screen").removeClass("active_btn2 active_btn3");
-    // $(".about, .skill, .animation_grid_1, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, #screen").removeClass("active_btn3");
   })
 });
 
+// Screen
+$(".switch_btn").on("change", function() {
+	if ( $(this).is(":checked") == true ) {
+		$("html, .navbar_menu, .navbar_menu_item, .about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .project_bg, .work_tit h2, .work_btn, .animation_grid_1, .animation_grid_2, .animation_grid_3, .scan, #screen").addClass("dark");
+	} else {
+		$("html, .navbar_menu, .navbar_menu_item, .about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .project_bg, .work_tit h2, .work_btn, .animation_grid_1, .animation_grid_2, .animation_grid_3, .scan, #screen").removeClass("dark");
+	}
+});
+// is - 주어진 선택자의 형태를 판별해줌

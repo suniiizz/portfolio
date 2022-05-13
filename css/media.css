@@ -163,22 +163,26 @@
   }
 
   /* top left corner */
-  .animation_grid_2 .scan::before {
+  .animation_grid_2 .scan::before, 
+  .animation_grid_2 .scan.dark::before {
     border-width: 3px 0 0 3px;
   }
 
   /* top right corner */
-  .animation_grid_2 .scan::after {
+  .animation_grid_2 .scan::after,
+  .animation_grid_2 .scan.dark::after {
     border-width: 3px 3px 0 0;
   }
 
   /* bottom right corner */
-  .animation_grid_2 .scan>:first-child::before {
+  .animation_grid_2 .scan>:first-child::before,
+  .animation_grid_2 .scan.dark>:first-child::before {
     border-width: 0 3px 3px 0;
   }
 
   /* bottom left corner */
-  .animation_grid_2 .scan>:first-child::after {
+  .animation_grid_2 .scan>:first-child::after,
+  .animation_grid_2 .scan.dark>:first-child::after {
     border-width: 0 0 3px 3px;
   }
 
