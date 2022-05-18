@@ -567,7 +567,27 @@
     }
   }
 
-  
+  .cup {
+    width: 80px;
+    height: 100px;
+    border-radius: 24px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 3px solid var(--color-grey);
+    box-shadow:  0 0 0 3px var(--color-grey);
+    margin-left: 20px;
+  }
+
+  .cup_hd {
+    margin-top: 15px;
+    width: 30px;
+    height: 55px;
+    border-top: 8px solid var(--color-grey);
+    border-right: 8px solid var(--color-grey);
+    border-bottom: 8px solid var(--color-grey);
+    border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  }
 }
 
 @media screen and (max-width: 799px) {

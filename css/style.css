@@ -1197,26 +1197,6 @@ top: 16px;
   flex-wrap: nowrap;
 }
 
-.water {
-  width: 280px;
-  height: 280px;
-  border-radius: 32px;
-  border: 20px solid var(--color-white);
-  background-image: url(../img/water.png);
-  background-repeat: repeat-x;
-  background-position: 0px 350px;
-  animation: filling 10s ease-in-out infinite;
-}
-
-@keyframes filling {
-  50% {
-    background-position: 3000px 0px;
-  }
-  100% {
-    background-position: 6000px 350px;
-  }
-}
-
 .cup {
   width: 120px;
   height: 150px;
@@ -1239,7 +1219,6 @@ top: 16px;
   margin-top: 30px;
   width: 40px;
   height: 70px;
-  /* border: 10px solid var(--color-grey); */
   border-top: 10px solid var(--color-grey);
   border-right: 10px solid var(--color-grey);
   border-bottom: 10px solid var(--color-grey);
@@ -1247,12 +1226,13 @@ top: 16px;
   border-bottom-right-radius: 22px;
 }
 
-
-#animation p {
-  font-family: 'Moranga Bold', sans-serif;
-  font-size: var(--font-medium);
-  text-align: center;
-  margin: 0;
+@keyframes filling {
+  50% {
+    background-position: 3000px 0px;
+  }
+  100% {
+    background-position: 6000px 350px;
+  }
 }
 
 /* Screen */
