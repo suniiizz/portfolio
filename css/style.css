@@ -47,6 +47,7 @@
   --color-light-pink: #0a0C11;
   --color-dark-pink: #0a0c11;
   --color-light-grey: #30363c;
+  --color-dark-grey: #8F8F8F;
   --color-light-blue: #0d1117;
   --color-black: #eff2f7;
 }
@@ -168,6 +169,7 @@ span {
 
 .navbar_menu_item.active.dark {
   background-color: #21262d;
+  color: var(--color-black);
 }
 
 .navbar_menu_item:hover {

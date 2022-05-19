@@ -77,9 +77,9 @@ $(document).ready(function() {
 // Screen
 $(".switch_btn").on("change", function() {
 	if ( $(this).is(":checked") == true ) {
-		$("html, .navbar_menu, .navbar_menu_item, .about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .project_bg, .work_tit h2, .work_btn, .animation_grid_1, .animation_grid_2, .animation_grid_3, .scan, #screen").addClass("dark");
+		$("html, .navbar_menu, .navbar_menu_item, .navbar_bg, .about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .project_bg, .work_tit h2, .work_btn, .animation_grid_1, .animation_grid_2, .animation_grid_3, .scan, #screen").addClass("dark");
 	} else {
-		$("html, .navbar_menu, .navbar_menu_item, .about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .project_bg, .work_tit h2, .work_btn, .animation_grid_1, .animation_grid_2, .animation_grid_3, .scan, #screen").removeClass("dark");
+		$("html, .navbar_menu, .navbar_menu_item, .navbar_bg, .about, .skill, .work_grid_1, .work_grid_2, .work_grid_3, .work_grid_4, .project_bg, .work_tit h2, .work_btn, .animation_grid_1, .animation_grid_2, .animation_grid_3, .scan, #screen").removeClass("dark");
 	}
 });
 // is - 주어진 선택자의 형태를 판별해줌
