@@ -89,7 +89,7 @@ h1 {
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: 20px 0;
-  font-family: 'Silka Medium', sans-serif;
+  font-family: 'Moranga Bold', sans-serif;
 
 }
 
@@ -98,7 +98,7 @@ h2 {
   font-weight: var(--weght-semi-bold);
   color: var(--color-black);
   margin: 12px 0;
-  font-family: 'Silka Medium', sans-serif;
+  font-family: 'Moranga Bold', sans-serif;
 }
 
 h3 {
@@ -106,7 +106,7 @@ h3 {
   font-weight: var(--weght-regular);
   color: var(--color-black);
   margin: 12px 0;
-  font-family: 'Silka Medium', sans-serif;
+  font-family: 'Moranga Bold', sans-serif;
 }
 
 p {
@@ -290,7 +290,6 @@ top: 312px;
 }
 
 .skill h2 {
-  font-family: 'Moranga Bold', sans-serif;
   margin: 0;
 }
 
@@ -429,7 +428,6 @@ left: 16px;
 .work_tit h2 {
   margin: 0;
   color: var(--color-white);
-  font-family: 'Moranga Bold', sans-serif;
 }
 
 .project_bg {
@@ -1076,6 +1074,31 @@ top: 608px;
   top: 16px;
   }
 
+.animation_grid_2 .animation_work {
+  position: relative;
+}
+
+.animation_grid_2 .animation_work h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  z-index: 3;
+}
+
+.animation_grid_2:hover h2 { 
+  display: none;
+}
+
+.animation_grid_2:hover .scan {
+	transform: scale(1.2);
+}
+
+.animation_grid_2:hover .scan .scanner {
+  animation-play-state: running;
+}
+
 .animation_grid_2 .scan {
   width: 60%;
   padding: 25px 30px;
@@ -1132,14 +1155,6 @@ top: 608px;
   bottom: 10px;
   left: 10px;
   border-width: 0 0 4px 4px;
-}
-
-.animation_grid_2 .scan:hover {
-	transform: scale(1.2);
-}
-
-.animation_grid_2 .scan:hover .scanner {
-  animation-play-state: running;
 }
 
 .animation_grid_2 .scan .scanner {
@@ -1266,7 +1281,6 @@ top: 16px;
 }
 
 #screen h2 {
-  font-family: 'Moranga Bold', sans-serif;
   margin: 0;
   padding: 24px 0 0 40px;
 }
