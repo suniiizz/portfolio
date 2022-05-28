@@ -256,16 +256,75 @@ span {
 top: 312px;
 }
 
-.about img {
+.about_img_wrap { 
+  position: relative;
   width: 100px;
   height: 100px;
+  overflow: hidden;
+}
+
+.about_img_wrap ul li:first-child {
+  animation: change 10s 0s linear infinite;
+}
+
+
+@keyframes change {
+  0% {
+    margin-top: -400px;
+  }
+  5% {
+    margin-top: -305px;
+  }
+  25% {
+    margin-top: -305px;
+  }
+  30% {
+    margin-top: -205px;
+  }
+  55% {
+    margin-top: -205px;
+  }
+  60% {
+    margin-top: -100px;
+  }
+  75% {
+    margin-top: -100px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -400px;
+  }
+}
+
+.about .about_img_wrap::before {
+  content: '[';
+  top: 30%;
+  left: -20%;
+  position: absolute; 
+  color: var(--color-black);
+  font-size: 42px;
+  line-height: 40px;
+}
+.about .about_img_wrap::after {
+  content: ']';
+  top: 30%;
+  right: -20%;
+  position: absolute;
+  color: var(--color-black);
+  font-size: 42px;
+  line-height: 40px;
 }
 
 .about p {
   line-height: 30px;
   font-size: var(--font-small);
   letter-spacing: 0.5px;
-  text-overflow: ellipsis;
+  word-break: keep-all;
 }
 
 /* Skill */
@@ -1091,14 +1150,6 @@ top: 608px;
   display: none;
 }
 
-.animation_grid_2:hover .scan {
-	transform: scale(1.2);
-}
-
-.animation_grid_2:hover .scan .scanner {
-  animation-play-state: running;
-}
-
 .animation_grid_2 .scan {
   width: 60%;
   padding: 25px 30px;
@@ -1157,6 +1208,14 @@ top: 608px;
   border-width: 0 0 4px 4px;
 }
 
+.animation_grid_2:hover .scan {
+	transform: scale(1.2);
+}
+
+.animation_grid_2:hover .scan .scanner {
+  animation-play-state: running;
+}
+
 .animation_grid_2 .scan .scanner {
   position: absolute;
   width: 100%;
@@ -1197,7 +1256,6 @@ top: 608px;
   width: 280px;
   height: 280px;
   background: var(--color-white);
-  /* background: var(--color-grey); */
   border-radius: 32px;
   transition: all var(--animation-duration) ease;
   display: flex;
@@ -1224,7 +1282,7 @@ top: 16px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow:  0 0 0 4px var(--color-grey);
-  animation: filling 10s ease-in-out infinite;
+  animation: filling 8s ease-in-out infinite;
   background-image: url(../img/water.png);
   background-repeat: repeat-x;
   background-position: 0 350px;
