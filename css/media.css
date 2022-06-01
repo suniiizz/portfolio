@@ -30,9 +30,9 @@
     width: 95%;
   }
 
-  .about img {
-    transform: scale(1.5);
-  }
+  /* .about img {
+    width: 100%;
+  } */
 
   /* work */
   .work_grid_1 {
@@ -242,6 +242,45 @@
 }
 
 @media (min-width: 800px) and (max-width: 1200px) {
+  /* about */
+  .about_img_wrap { 
+    width: 150px;
+    height: 150px;
+  }
+
+  @keyframes change {
+    0% {
+      margin-top: -600px;
+    }
+    5% {
+      margin-top: -450px;
+    }
+    25% {
+      margin-top: -450px;
+    }
+    30% {
+      margin-top: -300px;
+    }
+    55% {
+      margin-top: -300px;
+    }
+    60% {
+      margin-top: -150px;
+    }
+    75% {
+      margin-top: -150px;
+    }
+    80% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -600px;
+    }
+  }
+
   /* animation_1 */
   .animation_grid_1  .weather {
     width: 100px;
