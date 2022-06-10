@@ -30,9 +30,14 @@
     width: 95%;
   }
 
-  /* .about img {
-    width: 100%;
-  } */
+  .about_link {
+    flex-direction: column;
+  }
+
+  .about_link a:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 
   /* work */
   .work_grid_1 {

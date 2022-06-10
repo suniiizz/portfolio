@@ -307,6 +307,32 @@ top: 312px;
   word-break: keep-all;
 }
 
+.about_link {
+  display: flex;
+  position: absolute;
+  right: 47px;
+  top: 40px;
+  font-family: 'Silka Regular', sans-serif;
+}
+
+.about_link a {
+  display: flex;
+  align-items: center;
+}
+
+.about_link a:first-child {
+  margin-right: 15px;
+}
+
+.about_link a svg {
+  width: 15px;
+  margin-right: 4px;
+}
+
+.about_link a span {
+  margin-right: 6px;
+}
+
 /* Skill */
 .skill {
   display: flex;
