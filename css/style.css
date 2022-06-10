@@ -565,6 +565,16 @@ iframe {
   overflow: hidden;
 }
 
+.animation_grid_1 h2 {
+  position: absolute;
+  z-index: 20;
+  transition: all var(--animation-duration) ease;
+  display: none;
+}
+.animation_grid_1:hover h2{
+  display: block;
+}
+
 .animation_grid_1.active_btn2 {
   top: 312px;
   left: 16px;
@@ -1240,8 +1250,18 @@ top: 608px;
   align-items: center;
 }
 
+.animation_grid_3 h2 {
+  position: absolute;
+  display: none;
+}
+
+.animation_grid_3:hover h2 {
+  display: block;
+  z-index: 10;
+}
+
 .animation_grid_3.active_btn4 {
-top: 16px;
+  top: 16px;
 }
 
 .animation_grid_3 .animation_work {
@@ -1300,6 +1320,7 @@ top: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #screen.dark {
@@ -1315,13 +1336,15 @@ top: 16px;
   top: 16px;
 }
 
-#screen h2 {
-  margin: 0;
-  padding: 24px 0 0 40px;
-}
-
 .screen_mode {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen_mode h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .switch {
