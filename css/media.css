@@ -107,6 +107,10 @@
     justify-content: center;
   }
 
+  .work_btn:first-child {
+    margin-right: 0;
+  }
+
   .work_btn:nth-child(2) {
     margin-bottom: 10px;
   }
@@ -730,6 +734,14 @@
   }
   .work_grid_4.active_btn4 {
     top: 1636px;
+  }
+
+  .work_btn_wrap {
+    background-color: transparent;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 20px 20px;
+    opacity: 1;
   }
 
   .work_btn:hover {
