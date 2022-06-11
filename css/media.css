@@ -98,15 +98,17 @@
     left: 16px;
   }
 
+  .work_btn_wrap {
+    flex-direction: column-reverse;
+  }
+
   .work_btn {
     padding: 0;
     justify-content: center;
-    width: 36px;
-    height: 36px;
   }
 
-  .work_btn span {
-    display: none;
+  .work_btn:nth-child(2) {
+    margin-bottom: 10px;
   }
 
   /* skill */
@@ -731,12 +733,13 @@
   }
 
   .work_btn:hover {
-    width: 36px;
-    justify-content: center;
+    width: 70px;
+    box-shadow: none;
   }
   
-  .work_btn:hover .work_btn_text {
+  .work_btn:hover i {
     display: none;
+    box-shadow: 0;
   }
 
   /* skill */
